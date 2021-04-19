@@ -1,0 +1,36 @@
+.tab-background {
+	position: relative;
+}
+
+.tab-background::after {
+	border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0;
+	border-top: 2px solid -moz-accent-color;
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: center center;
+	transition: transform 75ms ease-in-out;
+}
+
+.tab-background[selected="true"]::after {
+	transform: scale(1, 1);
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+	display: none !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background::before {
+	content: '';
+	height: 4px;
+	width: 4px;
+	border-radius: 2px;
+	background-color: var(--identity-icon-color);
+	bottom: 4px;
+	right: 4px;
+	display: inline-block;
+	position: absolute;
+}
