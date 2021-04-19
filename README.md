@@ -2,4 +2,4 @@
 
 userChrome.css modifications to mitigate some of Protons weaknesses while keeping it Proton-ish.
 
-![screenshot.png](Screenshot)
+![screenshot](screenshot.png)
