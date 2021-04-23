@@ -1,7 +1,18 @@
-.tab-background {
-	position: relative;
+:root {
+	--tab-min-height: 33px;
 }
 
+#nav-bar:-moz-lwtheme {
+	background-image: linear-gradient(var(--lwt-selected-tab-background-color, transparent), var(--lwt-selected-tab-background-color, transparent)), linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none) !important;
+}
+
+.tab-background {
+	border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0 !important;
+	margin-bottom: 0 !important;
+	padding-bottom: var(--proton-tab-block-margin) !important;
+	position: relative;
+}
+/*
 .tab-background::after {
 	border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0;
 	border-top: 2px solid -moz-accent-color;
@@ -18,7 +29,7 @@
 .tab-background[selected="true"]::after {
 	transform: scale(1, 1);
 }
-
+*/
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
 	display: none !important;
 }
@@ -33,4 +44,8 @@
 	right: 4px;
 	display: inline-block;
 	position: absolute;
+}
+
+.tab-content {
+	padding-top: var(--proton-tab-block-margin) !important;
 }
