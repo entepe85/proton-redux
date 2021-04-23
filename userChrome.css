@@ -1,3 +1,7 @@
+:root:not([uidensity="compact"]) {
+	--tab-min-height: 32px !important;
+}
+
 .tab-background {
 	position: relative;
 }
