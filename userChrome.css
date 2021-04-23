@@ -12,7 +12,7 @@
 	padding-bottom: var(--proton-tab-block-margin) !important;
 	position: relative;
 }
-/*
+
 .tab-background::after {
 	border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0;
 	border-top: 2px solid -moz-accent-color;
@@ -29,7 +29,7 @@
 .tab-background[selected="true"]::after {
 	transform: scale(1, 1);
 }
-*/
+
 .tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
 	display: none !important;
 }
