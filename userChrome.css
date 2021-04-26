@@ -2,6 +2,18 @@
 	--tab-min-height: 32px !important;
 }
 
+:root {
+	--toolbar-field-non-lwt-bgcolor: rgb(230, 230, 234) !important;
+}
+
+#navigator-toolbox:not(:-moz-lwtheme) {
+	background-color: var(--toolbar-field-non-lwt-bgcolor) !important;
+}
+
+#TabsToolbar:not([brighttext]) #tabbrowser-tabs:not([noshadowfortests]) .tabbrowser-tab:is([visuallyselected="true"], [multiselected]) > .tab-stack > .tab-background {
+	box-shadow: 0 0 4px rgba(128,128,142,0.5) !important;
+}
+
 .tab-background {
 	position: relative;
 }
