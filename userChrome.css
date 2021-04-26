@@ -19,9 +19,13 @@
 }
 
 .tab-background::after {
+	/* For OS accent color */
+	/* background: -moz-accent-color; */
+	/* For Firefox brand gradient */
+	background: var(--panel-separator-zap-gradient);
 	border-radius: var(--tab-border-radius) var(--tab-border-radius) 0 0;
-	border-top: 2px solid -moz-accent-color;
 	content: '';
+	height: 2px;
 	left: 0;
 	position: absolute;
 	right: 0;
