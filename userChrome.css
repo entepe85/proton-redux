@@ -58,3 +58,13 @@
 :not([uidensity="compact"]) .tab-label {
 	margin-block: 0 !important;
 }
+
+#urlbar-container {
+	--urlbar-container-height: 36px !important;
+}
+
+#urlbar {
+	--urlbar-toolbar-height: 36px !important;
+	--urlbar-height: 30px !important;
+	--urlbar-min-height: 30px !important;
+}
