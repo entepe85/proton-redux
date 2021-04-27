@@ -1,5 +1,6 @@
 :root:not([uidensity="compact"]) {
 	--tab-min-height: 32px !important;
+	--urlbar-icon-padding: 4px !important;
 }
 
 :root {
@@ -59,11 +60,13 @@
 	margin-block: 0 !important;
 }
 
-#urlbar-container {
+:not([uidensity="compact"]) #urlbar-container {
 	--urlbar-container-height: 36px !important;
 }
 
-#urlbar {
+:not([uidensity="compact"]) #urlbar {
 	--urlbar-toolbar-height: 36px !important;
+	--urlbar-height: 28px !important;
+	--urlbar-min-height: 28px !important;
 }
 
