@@ -63,3 +63,7 @@
 	--urlbar-container-height: 36px !important;
 }
 
+#urlbar {
+	--urlbar-toolbar-height: 36px !important;
+}
+
