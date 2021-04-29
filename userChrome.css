@@ -70,3 +70,29 @@
 	--urlbar-min-height: 28px !important;
 }
 
+/* Move tabs below url toolbar */
+#navigator-toolbox {
+	display: flex !important;
+	flex-flow: column nowrap !important;
+	position: relative !important;
+}
+
+#titlebar {
+	order: 99 !important;
+}
+
+/* Change this to padding-right for window controls on the right side */
+#nav-bar-customization-target {
+	padding-left: 80px;
+}
+
+/* Customize this for other environments than macOS */
+.titlebar-buttonbox-container:-moz-locale-dir(ltr) {
+	position: absolute !important;
+	top: 10px !important;
+	display: block !important;
+}
+
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
+	display: none !important;
+}
